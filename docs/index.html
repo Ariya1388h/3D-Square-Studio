@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>3D Square Studio | Home</title>
     <style>
@@ -19,55 +20,80 @@
         }
     </style>
 </head>
-<body class="p-0 m-0 overflow-x-hidden">
+<body class="p-0 m-0 overflow-x-hidden bg-slate-700">
 
     <!-- Header -->
-    <header id="header" class="z-50 top-0 left-0 fixed h-32 w-screen bg-slate-800 bg-opacity-70 backdrop-blur-lg border-b-2 border-orange-300 text-slate-200 flex justify-around items-center p-10 header-visible">
-        <div class="font-bold text-4xl font-tomorrow">
-            <a href="" class="transition ease-in-out hover:text-orange-400"><span class="text-orange-400">3D</span> Square</a>
+    <header id="header" class="z-50 top-0 left-0 fixed h-32 w-screen bg-slate-800 bg-opacity-70 backdrop-blur-lg border-b-2 border-orange-300 text-slate-200 flex justify-around items-center p-10 lg:flex-row">
+    
+        <div class="font-bold text-5xl font-tomorrow">
+            <a href="#" class="transition-all ease duration-300 hover:text-orange-400">
+                <span class="text-orange-400">3D</span> Square
+            </a>
         </div>
-        <div class="text-xl font-semibold">
-            <a href="" class="pr-8 transition ease-in-out text-orange-300 hover:text-orange-400">Home</a>
-            <a href="#about" class="pr-8 transition ease-in-out hover:text-orange-400">About</a>
-            <a href="" class="pr-8 transition ease-in-out hover:text-orange-400">Contact</a>
-            <a href="" class="bg-orange-400 text-slate-800 p-3 rounded-md transition ease-in-out hover:bg-orange-500">Projects</a>
-        </div>
+
+        <a id="hamburger" href="" class=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z"></path></svg></a>
+    
+        <ul class="flex flex-row text-xl font-semibold space-x-8">
+            <li>
+                <a href="#" class="transition-all ease duration-300 text-orange-300 hover:text-orange-400">Home</a>
+            </li>
+            <li>
+                <a href="#about" class="transition-all ease duration-300 hover:text-orange-400">About</a>
+            </li>
+            <li>
+                <a href="#" class="transition-all ease duration-300 hover:text-orange-400">Contact</a>
+            </li>
+            <li>
+                <a href="#" class="bg-orange-400 text-slate-800 p-3 rounded-md transition-all ease duration-300 hover:bg-orange-500">Projects</a>
+            </li>
+        </ul>
+    
     </header>
+    
 
     <!-- Hero Section -->
     <section class="h-screen w-screen bg-gradient-to-b from-slate-600 via-slate-700 to-slate-800">
+
         <h1 class="pt-52 text-slate-200 text-7xl font-bold font-tomorrow text-center"><span class="text-orange-400">Development</span>, Innovated</h1>
-        <p class="mt-16 text-slate-300 text-xl max-w-6xl mx-auto text-center">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est consectetur in nostrum eum qui animi architecto libero accusamus, ullam quidem, assumenda fuga reiciendis saepe aspernatur! Quis veritatis possimus ut voluptatem maxime, sunt vitae doloremque aliquam quibusdam distinctio atque molestias blanditiis hic architecto, sed iure excepturi. Distinctio aut sit impedit ducimus?
+        <p class="mt-20 text-slate-300 text-xl max-w-6xl mx-auto text-center">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum sint porro eos maiores, ex, ullam odio officiis nihil esse aperiam autem adipisci distinctio repudiandae quidem corporis officia fugiat quae? Maiores!
         </p>
-        <div class="mt-16 flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-            <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-slate-700 rounded-lg bg-orange-400 hover:bg-orange-500">
+
+        <div class="mt-20 flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+            <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-slate-800 rounded-lg bg-orange-400 transition-all ease duration-300 hover:bg-orange-500">
                 Contact Us
                 <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                 </svg>
             </a>
-            <a href="#" class="py-3 px-5 sm:ms-4 text-sm font-medium text-slate-200 focus:outline-none bg-transparent rounded-lg border border-slate-200 hover:bg-slate-200 hover:text-slate-700 ">
+
+            <a href="#" class="py-3 px-5 sm:ms-4 text-sm font-medium text-slate-200 focus:outline-none bg-transparent rounded-lg border border-slate-200 hover:bg-slate-200 transition-all ease duration-300 hover:text-slate-700 ">
                 Learn more
             </a>  
         </div>
+
     </section>
 
     <!-- About Section -->
     <section class="h-screen w-screen bg-gradient-to-b from-slate-800 via-slate-800 to-slate-700" id="about">
+
         <h1 class="pt-10 text-slate-200 text-7xl font-bold font-tomorrow text-center">About <span class="text-orange-400">US</span></h1>
+
         <p class="pt-16 text-slate-300 text-xl max-w-6xl mx-auto text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe vitae iste corporis numquam, animi eligendi.</p>
+
         <div class="grid grid-cols-4 gap-x-10 max-w-4xl mx-auto px-16 pt-10">
             <div class="bg-orange-400 rounded-md h-48 w-48"></div>
             <div class="bg-orange-400 rounded-md h-48 w-48"></div>
             <div class="bg-orange-400 rounded-md h-48 w-48"></div>
             <div class="bg-orange-400 rounded-md h-48 w-48"></div>
         </div>
+
         <div class="pt-10">
-            <button class="bg-orange-400 text-slate-800 text-xl rounded-md p-3 min-w-80 flex justify-center mx-auto transition ease-in-out duration-300 hover:bg-orange-500">
-                <a href="./team.html">Our Team</a>
-            </button>
+            <a href="./team.html" class="bg-orange-400 text-slate-800 text-xl rounded-md p-3 max-w-80 flex justify-center mx-auto transition ease-in-out duration-300 hover:bg-orange-500">
+                Our Team
+            </a>
         </div>
+
     </section>
 
     <!-- Contact Section -->
@@ -75,12 +101,46 @@
         
     </section>
 
-    <footer class="h-screen w-screen bg-gradient-to-b from-slate-500 to-slate-600 flex justify-center items-end">
-        <div class="w-5/6 h-5/6 bg-gradient-to-bl from-slate-900 to-slate-700 rounded-t-3xl">
+    <!-- Footer Section -->
+    <footer class="h-dvh w-screen bg-gradient-to-b from-slate-500 to-slate-600 flex justify-center items-end">
+        <div class="h-min w-5/6 bg-gradient-to-bl from-slate-800 to-slate-600 rounded-t-3xl">
+            <div class="grid grid-cols-2 grid-rows-2 p-20 pb-0">
+
+                <div class="">
+                    <h1 class="text-slate-200 text-5xl font-tomorrow font-bold transition-all ease duration-300 hover:text-orange-400">3D Square <br><span class="text-orange-400 text-2xl">Studio</span></h1>
+                </div>
+
+                <div class="">
+                    <h1 class="text-slate-200 text-4xl font-tomorrow font-bold transition-all ease duration-300 hover:text-orange-400">Links</h1>
+                    <ul class="flex flex-col text-xl text-slate-200 py-5">
+                        <li><a href="./index.html" class="pt-3 transition-all ease duration-300 hover:text-orange-400">Home</a></li>
+                        <li><a href="#about" class="pt-3 transition-all ease duration-300 hover:text-orange-400">About</a></li>
+                        <li><a href="./contact.html" class="pt-3 transition-all ease duration-300 hover:text-orange-400">Contact</a></li>
+                        <li><a href="./projects.html" class="pt-3 transition-all ease duration-300 hover:text-orange-400">Projects</a></li>
+                        <li><a href="./team.html" class="pt-3 transition-all ease duration-300 hover:text-orange-400">Our Members</a></li>
+                        <li><a href="./FAQ.html" class="pt-3 transition-all ease duration-300 hover:text-orange-400">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-2 flex justify-center items-center mt-10">
+                    <ul class="inline-flex">
+                        <li><a href=""><svg class="h-14 w-14 border-2 p-2 m-2 rounded-full border-orange-400 bg-orange-400 text-slate-200 transition-all ease duration-300 hover:text-orange-400 hover:border-slate-200 hover:bg-slate-200 hover:scale-[120%] hover:translate-y-[-30%]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"></path></svg></a></li>
+                        <li><a href=""><svg class="h-14 w-14 border-2 p-2 m-2 rounded-full border-orange-400 bg-orange-400 text-slate-200 transition-all ease duration-300 hover:text-orange-400 hover:border-slate-200 hover:bg-slate-200 hover:scale-[120%] hover:translate-y-[-30%]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19.3034 5.33716C17.9344 4.71103 16.4805 4.2547 14.9629 4C14.7719 4.32899 14.5596 4.77471 14.411 5.12492C12.7969 4.89144 11.1944 4.89144 9.60255 5.12492C9.45397 4.77471 9.2311 4.32899 9.05068 4C7.52251 4.2547 6.06861 4.71103 4.70915 5.33716C1.96053 9.39111 1.21766 13.3495 1.5891 17.2549C3.41443 18.5815 5.17612 19.388 6.90701 19.9187C7.33151 19.3456 7.71356 18.73 8.04255 18.0827C7.41641 17.8492 6.82211 17.5627 6.24904 17.2231C6.39762 17.117 6.5462 17.0003 6.68416 16.8835C10.1438 18.4648 13.8911 18.4648 17.3082 16.8835C17.4568 17.0003 17.5948 17.117 17.7434 17.2231C17.1703 17.5627 16.576 17.8492 15.9499 18.0827C16.2789 18.73 16.6609 19.3456 17.0854 19.9187C18.8152 19.388 20.5875 18.5815 22.4033 17.2549C22.8596 12.7341 21.6806 8.80747 19.3034 5.33716ZM8.5201 14.8459C7.48007 14.8459 6.63107 13.9014 6.63107 12.7447C6.63107 11.5879 7.45884 10.6434 8.5201 10.6434C9.57071 10.6434 10.4303 11.5879 10.4091 12.7447C10.4091 13.9014 9.57071 14.8459 8.5201 14.8459ZM15.4936 14.8459C14.4535 14.8459 13.6034 13.9014 13.6034 12.7447C13.6034 11.5879 14.4323 10.6434 15.4936 10.6434C16.5442 10.6434 17.4038 11.5879 17.3825 12.7447C17.3825 13.9014 16.5548 14.8459 15.4936 14.8459Z"></path></svg></a></li>
+                        <li><a href=""><svg class="h-14 w-14 border-2 p-2 m-2 rounded-full border-orange-400 bg-orange-400 text-slate-200 transition-all ease duration-300 hover:text-orange-400 hover:border-slate-200 hover:bg-slate-200 hover:scale-[120%] hover:translate-y-[-30%]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.25361 18.4944L7.97834 18.917C9.18909 19.623 10.5651 20 12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 13.4363 4.37821 14.8128 5.08466 16.0238L5.50704 16.7478L4.85355 19.1494L7.25361 18.4944ZM2.00516 22L3.35712 17.0315C2.49494 15.5536 2.00098 13.8345 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C10.1671 22 8.44851 21.5064 6.97086 20.6447L2.00516 22ZM8.39232 7.30833C8.5262 7.29892 8.66053 7.29748 8.79459 7.30402C8.84875 7.30758 8.90265 7.31384 8.95659 7.32007C9.11585 7.33846 9.29098 7.43545 9.34986 7.56894C9.64818 8.24536 9.93764 8.92565 10.2182 9.60963C10.2801 9.76062 10.2428 9.95633 10.125 10.1457C10.0652 10.2428 9.97128 10.379 9.86248 10.5183C9.74939 10.663 9.50599 10.9291 9.50599 10.9291C9.50599 10.9291 9.40738 11.0473 9.44455 11.1944C9.45903 11.25 9.50521 11.331 9.54708 11.3991C9.57027 11.4368 9.5918 11.4705 9.60577 11.4938C9.86169 11.9211 10.2057 12.3543 10.6259 12.7616C10.7463 12.8783 10.8631 12.9974 10.9887 13.108C11.457 13.5209 11.9868 13.8583 12.559 14.1082L12.5641 14.1105C12.6486 14.1469 12.692 14.1668 12.8157 14.2193C12.8781 14.2457 12.9419 14.2685 13.0074 14.2858C13.0311 14.292 13.0554 14.2955 13.0798 14.2972C13.2415 14.3069 13.335 14.2032 13.3749 14.1555C14.0984 13.279 14.1646 13.2218 14.1696 13.2222V13.2238C14.2647 13.1236 14.4142 13.0888 14.5476 13.097C14.6085 13.1007 14.6691 13.1124 14.7245 13.1377C15.2563 13.3803 16.1258 13.7587 16.1258 13.7587L16.7073 14.0201C16.8047 14.0671 16.8936 14.1778 16.8979 14.2854C16.9005 14.3523 16.9077 14.4603 16.8838 14.6579C16.8525 14.9166 16.7738 15.2281 16.6956 15.3913C16.6406 15.5058 16.5694 15.6074 16.4866 15.6934C16.3743 15.81 16.2909 15.8808 16.1559 15.9814C16.0737 16.0426 16.0311 16.0714 16.0311 16.0714C15.8922 16.159 15.8139 16.2028 15.6484 16.2909C15.391 16.428 15.1066 16.5068 14.8153 16.5218C14.6296 16.5313 14.4444 16.5447 14.2589 16.5347C14.2507 16.5342 13.6907 16.4482 13.6907 16.4482C12.2688 16.0742 10.9538 15.3736 9.85034 14.402C9.62473 14.2034 9.4155 13.9885 9.20194 13.7759C8.31288 12.8908 7.63982 11.9364 7.23169 11.0336C7.03043 10.5884 6.90299 10.1116 6.90098 9.62098C6.89729 9.01405 7.09599 8.4232 7.46569 7.94186C7.53857 7.84697 7.60774 7.74855 7.72709 7.63586C7.85348 7.51651 7.93392 7.45244 8.02057 7.40811C8.13607 7.34902 8.26293 7.31742 8.39232 7.30833Z"></path></svg></a></li>
+                        <li><a href=""><svg class="h-14 w-14 border-2 p-2 m-2 rounded-full border-orange-400 bg-orange-400 text-slate-200 transition-all ease duration-300 hover:text-orange-400 hover:border-slate-200 hover:bg-slate-200 hover:scale-[120%] hover:translate-y-[-30%]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.2439 4C12.778 4.00294 14.1143 4.01586 15.5341 4.07273L16.0375 4.09468C17.467 4.16236 18.8953 4.27798 19.6037 4.4755C20.5486 4.74095 21.2913 5.5155 21.5423 6.49732C21.942 8.05641 21.992 11.0994 21.9982 11.8358L21.9991 11.9884L21.9991 11.9991C21.9991 11.9991 21.9991 12.0028 21.9991 12.0099L21.9982 12.1625C21.992 12.8989 21.942 15.9419 21.5423 17.501C21.2878 18.4864 20.5451 19.261 19.6037 19.5228C18.8953 19.7203 17.467 19.8359 16.0375 19.9036L15.5341 19.9255C14.1143 19.9824 12.778 19.9953 12.2439 19.9983L12.0095 19.9991L11.9991 19.9991C11.9991 19.9991 11.9956 19.9991 11.9887 19.9991L11.7545 19.9983C10.6241 19.9921 5.89772 19.941 4.39451 19.5228C3.4496 19.2573 2.70692 18.4828 2.45587 17.501C2.0562 15.9419 2.00624 12.8989 2 12.1625V11.8358C2.00624 11.0994 2.0562 8.05641 2.45587 6.49732C2.7104 5.51186 3.45308 4.73732 4.39451 4.4755C5.89772 4.05723 10.6241 4.00622 11.7545 4H12.2439ZM9.99911 8.49914V15.4991L15.9991 11.9991L9.99911 8.49914Z"></path></svg></a></li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div class="flex justify-center items-center h-6 text-lg text-slate-200 font-semibold">
+                <h1>Copyright © 2024 Ariya Hasanzadeh. All Rights Reserved.</h1>
+            </div>
 
         </div>
     </footer>
 
+    
     <script src="script.js"></script>
 
 </body>

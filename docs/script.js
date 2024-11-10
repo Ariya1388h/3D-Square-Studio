@@ -1,3 +1,8 @@
+function toggleMenu() {
+    const navLinks = document.getElementById("nav-links");
+    navLinks.classList.toggle("hidden"); // Toggle the hidden class to show/hide the menu
+}
+
 let lastScroll = 0;
         const header = document.getElementById('header');
 
@@ -19,3 +24,4 @@ let lastScroll = 0;
             }
             lastScroll = currentScroll;
         });
+
